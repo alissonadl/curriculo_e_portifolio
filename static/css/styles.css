@@ -76,7 +76,11 @@ body {
     text-align: center;
 }
 
-
+#headshot {
+    align-content: center;
+    width: 35%;
+    height: 35%;
+}
 
 /* ########### RODAPÉ DO SITE ########### */
 .rodape {
