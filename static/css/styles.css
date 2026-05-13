@@ -1,0 +1,102 @@
+/* ########### CORPO DO SITE ########### */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:#1b1b1b; /* fundo escuro semelhante ao da imagem */
+    margin:0;  /* remove a margem padrão do navegador */
+    min-height:100vh; /* faz o body ter no mínimo a altura da tela inteira */
+    color:#e6e6e6; /* cor padrão do texto (cinza claro) */
+}
+
+/* quando o link recebe foco (acessibilidade) */
+*:focus{
+    outline:2px solid #2a8ec2;
+    border-radius: 2px;
+}
+
+
+
+/* ########## BARRA DE NAVEGAÇÃO ########### */
+.barra_navegacao {
+    background-color:#111111; /* barra quase preta */
+    padding:1%;
+    margin:auto;
+    min-height: 60px;
+    width:100%; /* faz o footer ocupar toda a largura da tela */
+    display:flex; /* transforma em container flex */
+    align-items:center; /* centraliza verticalmente */
+    justify-content:center; /* centraliza horizontalmente */
+}
+
+.barra_navegacao nav{
+    display:flex; /* coloca os links lado a lado */
+    width:95%; /* largura da área do menu */
+}
+
+.barra_navegacao a{
+    flex:1; /* todos os links ocupam o mesmo espaço */
+    text-align:center;
+    padding-top:0.6%;
+    padding-bottom:0.6%;
+    text-decoration:none; /* remove sublinhado */
+    color:#e6e6e6; /* texto claro */
+    margin-right:1%;
+    margin-left:1%;
+    border-radius:4px; /* cantos levemente arredondados */
+}
+
+/* efeito ao passar o mouse */
+.barra_navegacao a:hover{
+    background:#2a8ec2;
+    transition:0.3s; /* suaviza o efeito */
+    transform:scale(1.1); /* aumenta levemente o botão */
+}
+
+/* efeito ao clicar */
+.barra_navegacao a:active{
+    background:#1f6d94; /* azul mais escuro durante o clique */
+    transition: 0.1s;
+}
+
+
+
+/* ########### CONTAINER DO CONTEÚDO ########### */
+.container {
+    flex: 1;
+    background-color:#222222; /* cinza escuro para separar do fundo */
+    padding:2%;
+    margin:auto;
+    max-width:90%;
+    border-radius:6px; /* cantos arredondados */
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.conteudo {
+    text-align: center;
+}
+
+
+
+/* ########### RODAPÉ DO SITE ########### */
+.rodape {
+    background-color:#111111; /* mesmo tom da navbar para consistência */
+    width:100%; /* faz o footer ocupar toda a largura da tela */
+    padding:1.5%;
+    margin:auto;
+    text-align:center;
+}
+
+.contatos {
+    padding:1%;
+    color:#cfcfcf; /* cinza claro para leitura confortável */
+}
+
+.contatos a{
+    padding: 1.5%;
+}
+
+.contatos a:hover img{
+    transition:0.3s; /* suaviza o efeito */
+    transform:scale(1.33); /* aumenta levemente o botão */
+}

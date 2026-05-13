@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="icon" href="/static/icones/icone.ico">
+    <title>{{titulo_pagina}}</title>
+</head>
+<body>
+    <div class = "barra_navegacao">
+        <nav>
+            <a href="{{url_for('inicio')}}">APRESENTAÇÃO</a>
+            <a href="{{url_for('curriculo')}}">CURRÍCULO</a>
+            {#<a href="{{url_for('certificados')}}">CERTIFICADOS</a>#}
+            <a href="{{url_for('portfolio')}}">PORTFÓLIO</a>
+        </nav>
+    </div>
+    <div class = "container">
+        {%block conteudo%}
+        {%endblock%}
+    </div>
+    <footer class = "rodape">
+        <address class="contatos"> 
+            <a href="mailto:alissonadl_profissional@hotmail.com" target="_blank"><img src="/static/imagens/logo_email.png" width="50px" height="50px" alt="E-mail"></a>
+            <a href="https://wa.me/5584998978143" target="_blank"><img src="/static/imagens/logo_whatsapp.png" width="50px" height="50px" alt="Whatsapp"></a>
+            <a href="https://www.linkedin.com/in/alissonaraujodelima250201/" target="_blank"><img src="/static/imagens/logo_linkedIn.png" width="50px" height="50px" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/alisson_adl/" target="_blank"><img src="/static/imagens/logo_instagram.png" width="50px" height="50px" alt="Instagram"></a>
+        </address>
+        <p class="copyright" >&copy; 2026 Alisson Araújo de Lima</p>
+    </footer>
+</body>
+</html>
